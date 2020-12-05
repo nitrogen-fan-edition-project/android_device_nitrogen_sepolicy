@@ -10,3 +10,6 @@ hal_client_domain(system_app, hal_lineage_touch)
 
 # Read selinux status
 allow system_app selinuxfs:file r_file_perms;
+
+# Allow Customizations to write accent prop
+set_prop(system_app, theme_prop)
